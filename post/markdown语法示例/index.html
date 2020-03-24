@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>董锦涛的博客  | Markdown语法示例</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css" />
+    <link rel="stylesheet" href="https://jett010.github.io/css/blog.css" />
+    
+</head>
+<body>
+
+    
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="https://jett010.github.io">Home</a>
+        </div>
+    </nav>
+    
+
+    
+    <section class="hero is-info is-medium">
+        <div class="hero-body" style="background-image: url(https://jett010.github.io/img/bg-blog.jpg);">
+            <div class="container has-text-centered">
+                <br>
+                <h1 class="title is-size-1">
+                    
+                        Markdown语法示例
+                    
+                </h1>
+                
+            </div>
+        </div>
+    </section>
+
+
+<div class="container">
+    <div class="section">
+    
+
+<div class="columns">
+    <div class="column is-9">
+        <div class="tile is-child box">
+            <div class="content">
+                <h1 id="欢迎使用markdown在线编辑器mdeditor">欢迎使用Markdown在线编辑器MdEditor</h1>
+<p><strong>Markdown是一种轻量级的「标记语言」</strong></p>
+<p><img src="https://www.mdeditor.com/images/logos/markdown.png" alt="markdown" title="markdown"></p>
+<p>Markdown是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。它允许人们使用易读易写的纯文本格式编写文档，然后转换成格式丰富的HTML页面，Markdown文件的后缀名便是“.md”</p>
+<h2 id="mdeditor是一个在线编辑markdown文档的编辑器">MdEditor是一个在线编辑Markdown文档的编辑器</h2>
+<p><em>MdEditor扩展了Markdown的功能（如表格、脚注、内嵌HTML等等），以使让Markdown转换成更多的格式，和更丰富的展示效果，这些功能原初的Markdown尚不具备。</em></p>
+<blockquote>
+<p>Markdown增强版中比较有名的有Markdown Extra、MultiMarkdown、 Maruku等。这些衍生版本要么基于工具，如<del>Pandoc</del>，Pandao；要么基于网站，如GitHub和Wikipedia，在语法上基本兼容，但在一些语法和渲染效果上有改动。</p>
+</blockquote>
+<p>MdEditor源于Pandao的JavaScript开源项目，开源地址<a href="https://github.com/pandao/editor.md" title="Editor.md">Editor.md</a>，并在MIT开源协议的许可范围内进行了优化，以适应广大用户群体的需求。向优秀的markdown开源编辑器原作者Pandao致敬。</p>
+<p><img src="https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png" alt="Pandao editor.md" title="Pandao editor.md"></p>
+<h2 id="mdeditor的功能列表演示">MdEditor的功能列表演示</h2>
+<h1 id="标题h1">标题H1</h1>
+<h2 id="标题h2">标题H2</h2>
+<h3 id="标题h3">标题H3</h3>
+<h4 id="标题h4">标题H4</h4>
+<h5 id="标题h5">标题H5</h5>
+<h6 id="标题h5-1">标题H5</h6>
+<h3 id="字符效果和横线等">字符效果和横线等</h3>
+<hr>
+<p><del>删除线</del> <!-- raw HTML omitted -->删除线（开启识别HTML标签时）<!-- raw HTML omitted --></p>
+<p><em>斜体字</em>      <em>斜体字</em></p>
+<p><strong>粗体</strong>  <strong>粗体</strong></p>
+<p><em><strong>粗斜体</strong></em> <em><strong>粗斜体</strong></em></p>
+<p>上标：X<!-- raw HTML omitted -->2<!-- raw HTML omitted -->，下标：O<!-- raw HTML omitted -->2<!-- raw HTML omitted --></p>
+<p><strong>缩写(同HTML的abbr标签)</strong></p>
+<blockquote>
+<p>即更长的单词或短语的缩写形式，前提是开启识别HTML标签时，已默认开启</p>
+</blockquote>
+<p>The <!-- raw HTML omitted -->HTML<!-- raw HTML omitted --> specification is maintained by the <!-- raw HTML omitted -->W3C<!-- raw HTML omitted -->.</p>
+<h3 id="引用-blockquotes">引用 Blockquotes</h3>
+<blockquote>
+<p>引用文本 Blockquotes</p>
+</blockquote>
+<p>引用的行内混合 Blockquotes</p>
+<blockquote>
+<p>引用：如果想要插入空白换行<code>即&lt;br /&gt;标签</code>，在插入处先键入两个以上的空格然后回车即可，<a href="https://www.mdeditor.com/">普通链接</a>。</p>
+</blockquote>
+<h3 id="锚点与链接-links">锚点与链接 Links</h3>
+<p><a href="https://www.mdeditor.com/">普通链接</a>
+<a href="https://www.mdeditor.com/" title="普通链接带标题">普通链接带标题</a>
+直接链接：<a href="https://www.mdeditor.com">https://www.mdeditor.com</a>
+[锚点链接][anchor-id]
+[anchor-id]: <a href="https://www.mdeditor.com/">https://www.mdeditor.com/</a>
+<a href="mailto:test.test@gmail.com">mailto:test.test@gmail.com</a>
+GFM a-tail link @pandao
+邮箱地址自动链接 <a href="mailto:test.test@gmail.com">test.test@gmail.com</a>  <a href="mailto:www@vip.qq.com">www@vip.qq.com</a></p>
+<blockquote>
+<p>@pandao</p>
+</blockquote>
+<h3 id="多语言代码高亮-codes">多语言代码高亮 Codes</h3>
+<h4 id="行内代码-inline-code">行内代码 Inline code</h4>
+<p>执行命令：<code>npm install marked</code></p>
+<h4 id="缩进风格">缩进风格</h4>
+<p>即缩进四个空格，也做为实现类似 <code>&lt;pre&gt;</code> 预格式化文本 ( Preformatted Text ) 的功能。</p>
+<pre><code>&lt;?php
+    echo &quot;Hello world!&quot;;
+?&gt;
+</code></pre>
+<p>预格式化文本：</p>
+<pre><code>| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
+</code></pre>
+<h4 id="js代码">JS代码</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">test</span>() {
+	<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Hello world!&#34;</span>);
+}
+</code></pre></div><h4 id="go代码">Go代码</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+
+<span style="color:#f92672">import</span> (
+    <span style="color:#e6db74">&#34;fmt&#34;</span>
+    <span style="color:#e6db74">&#34;io/ioutil&#34;</span>
+    <span style="color:#e6db74">&#34;net/http&#34;</span>
+    <span style="color:#e6db74">&#34;strings&#34;</span>
+)
+
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+    <span style="color:#75715e">//模拟一个post提交请求
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">resp</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">Post</span>(<span style="color:#e6db74">&#34;http://www.mafool.com&#34;</span>, <span style="color:#e6db74">&#34;application/x-www-form-urlencoded&#34;</span>, <span style="color:#a6e22e">strings</span>.<span style="color:#a6e22e">NewReader</span>(<span style="color:#e6db74">&#34;id=1&#34;</span>))
+    <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
+        panic(<span style="color:#a6e22e">err</span>)
+    }
+    <span style="color:#75715e">//关闭连接
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">defer</span> <span style="color:#a6e22e">resp</span>.<span style="color:#a6e22e">Body</span>.<span style="color:#a6e22e">Close</span>()
+    <span style="color:#75715e">//读取报文中所有内容
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">body</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">ioutil</span>.<span style="color:#a6e22e">ReadAll</span>(<span style="color:#a6e22e">resp</span>.<span style="color:#a6e22e">Body</span>)
+    <span style="color:#75715e">//输出内容
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(string(<span style="color:#a6e22e">body</span>))
+}
+</code></pre></div><h4 id="html-代码-html-codes">HTML 代码 HTML codes</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
+&lt;<span style="color:#f92672">html</span>&gt;
+    &lt;<span style="color:#f92672">head</span>&gt;
+        &lt;<span style="color:#f92672">mate</span> <span style="color:#a6e22e">charest</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;utf-8&#34;</span> /&gt;
+        &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;keywords&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Editor.md, Markdown, Editor&#34;</span> /&gt;
+        &lt;<span style="color:#f92672">title</span>&gt;Hello world!&lt;/<span style="color:#f92672">title</span>&gt;
+        &lt;<span style="color:#f92672">style</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/css&#34;</span>&gt;
+            <span style="color:#f92672">body</span>{<span style="color:#66d9ef">font-size</span>:<span style="color:#ae81ff">14</span><span style="color:#66d9ef">px</span>;<span style="color:#66d9ef">color</span>:<span style="color:#ae81ff">#444</span>;<span style="color:#66d9ef">font-family</span>: <span style="color:#e6db74">&#34;Microsoft Yahei&#34;</span>, Tahoma, <span style="color:#e6db74">&#34;Hiragino Sans GB&#34;</span>, Arial;<span style="color:#66d9ef">background</span>:<span style="color:#ae81ff">#fff</span>;}
+            <span style="color:#f92672">ul</span>{<span style="color:#66d9ef">list-style</span>: <span style="color:#66d9ef">none</span>;}
+            <span style="color:#f92672">img</span>{<span style="color:#66d9ef">border</span>:<span style="color:#66d9ef">none</span>;<span style="color:#66d9ef">vertical-align</span>: <span style="color:#66d9ef">middle</span>;}
+        &lt;/<span style="color:#f92672">style</span>&gt;
+    &lt;/<span style="color:#f92672">head</span>&gt;
+    &lt;<span style="color:#f92672">body</span>&gt;
+        &lt;<span style="color:#f92672">h1</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text-xxl&#34;</span>&gt;Hello world!&lt;/<span style="color:#f92672">h1</span>&gt;
+        &lt;<span style="color:#f92672">p</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text-green&#34;</span>&gt;Plain text&lt;/<span style="color:#f92672">p</span>&gt;
+    &lt;/<span style="color:#f92672">body</span>&gt;
+&lt;/<span style="color:#f92672">html</span>&gt;
+</code></pre></div><h3 id="图片-images">图片 Images</h3>
+<p>图片加链接 (Image + Link)：</p>
+<p><a href="https://www.mdeditor.com/images/logos/markdown.png" title="markdown"><img src="https://www.mdeditor.com/images/logos/markdown.png" alt=""></a></p>
+<blockquote>
+<p>Follow your heart.</p>
+</blockquote>
+<hr>
+<h3 id="列表-lists">列表 Lists</h3>
+<h4 id="无序列表减号unordered-lists--">无序列表（减号）Unordered Lists (-)</h4>
+<ul>
+<li>列表一</li>
+<li>列表二</li>
+<li>列表三</li>
+</ul>
+<h4 id="无序列表星号unordered-lists-">无序列表（星号）Unordered Lists (*)</h4>
+<ul>
+<li>列表一</li>
+<li>列表二</li>
+<li>列表三</li>
+</ul>
+<h4 id="无序列表加号和嵌套unordered-lists-">无序列表（加号和嵌套）Unordered Lists (+)</h4>
+<ul>
+<li>列表一</li>
+<li>列表二
+<ul>
+<li>列表二-1</li>
+<li>列表二-2</li>
+<li>列表二-3</li>
+</ul>
+</li>
+<li>列表三
+<ul>
+<li>列表一</li>
+<li>列表二</li>
+<li>列表三</li>
+</ul>
+</li>
+</ul>
+<h4 id="有序列表-ordered-lists--">有序列表 Ordered Lists (-)</h4>
+<ol>
+<li>第一行</li>
+<li>第二行</li>
+<li>第三行</li>
+</ol>
+<h4 id="gfm-task-list">GFM task list</h4>
+<ul>
+<li><input checked="" disabled="" type="checkbox">GFM task list 1</li>
+<li><input checked="" disabled="" type="checkbox">GFM task list 2</li>
+<li><input disabled="" type="checkbox">GFM task list 3
+<ul>
+<li><input disabled="" type="checkbox">GFM task list 3-1</li>
+<li><input disabled="" type="checkbox">GFM task list 3-2</li>
+<li><input disabled="" type="checkbox">GFM task list 3-3</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox">GFM task list 4
+<ul>
+<li><input disabled="" type="checkbox">GFM task list 4-1</li>
+<li><input disabled="" type="checkbox">GFM task list 4-2</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="绘制表格-tables">绘制表格 Tables</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th align="right">价格</th>
+<th align="center">数量</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>计算机</td>
+<td align="right">$1600</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td>手机</td>
+<td align="right">$12</td>
+<td align="center">12</td>
+</tr>
+<tr>
+<td>管线</td>
+<td align="right">$1</td>
+<td align="center">234</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>First Header</th>
+<th>Second Header</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Content Cell</td>
+<td>Content Cell</td>
+</tr>
+<tr>
+<td>Content Cell</td>
+<td>Content Cell</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>First Header</th>
+<th>Second Header</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Content Cell</td>
+<td>Content Cell</td>
+</tr>
+<tr>
+<td>Content Cell</td>
+<td>Content Cell</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Function name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>help()</code></td>
+<td>Display the help window.</td>
+</tr>
+<tr>
+<td><code>destroy()</code></td>
+<td><strong>Destroy your computer!</strong></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th align="left">Left-Aligned</th>
+<th align="center">Center Aligned</th>
+<th align="right">Right Aligned</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">col 3 is</td>
+<td align="center">some wordy text</td>
+<td align="right">$1600</td>
+</tr>
+<tr>
+<td align="left">col 2 is</td>
+<td align="center">centered</td>
+<td align="right">$12</td>
+</tr>
+<tr>
+<td align="left">zebra stripes</td>
+<td align="center">are neat</td>
+<td align="right">$1</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th align="right">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Computer</td>
+<td align="right">$1600</td>
+</tr>
+<tr>
+<td>Phone</td>
+<td align="right">$12</td>
+</tr>
+<tr>
+<td>Pipe</td>
+<td align="right">$1</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h4 id="特殊符号-html-entities-codes">特殊符号 HTML Entities Codes</h4>
+<p>© &amp;  ¨ ™ ¡ £
+&amp; &lt; &gt; ¥ € ® ± ¶ § ¦ ¯ « ·</p>
+<p>X² Y³ ¾ ¼  ×  ÷   »</p>
+<p>18ºC  &quot;  '</p>
+<p>[========]</p>
+<h3 id="emoji表情-smiley">Emoji表情 :smiley:</h3>
+<blockquote>
+<p>Blockquotes :star:</p>
+</blockquote>
+<h4 id="gfm-task-lists--emoji--fontawesome-icon-emoji--editormd-logo-emoji-editormd-logo-5x">GFM task lists &amp; Emoji &amp; fontAwesome icon emoji &amp; editormd logo emoji :editormd-logo-5x:</h4>
+<ul>
+<li><input checked="" disabled="" type="checkbox">:smiley: @mentions, :smiley: #refs, <a href="">links</a>, <strong>formatting</strong>, and <!-- raw HTML omitted -->tags<!-- raw HTML omitted --> supported :editormd-logo:;</li>
+<li><input checked="" disabled="" type="checkbox">list syntax required (any unordered or ordered list supported) :editormd-logo-3x:;</li>
+<li><input checked="" disabled="" type="checkbox"><input disabled="" type="checkbox">:smiley: this is a complete item :smiley:;</li>
+<li><input disabled="" type="checkbox">[]this is an incomplete item <a href="#">test link</a> :fa-star: @pandao;</li>
+<li><input disabled="" type="checkbox"><input disabled="" type="checkbox">this is an incomplete item :fa-star: :fa-gear:;
+<ul>
+<li><input disabled="" type="checkbox">:smiley: this is an incomplete item <a href="#">test link</a> :fa-star: :fa-gear:;</li>
+<li><input disabled="" type="checkbox">:smiley: this is  :fa-star: :fa-gear: an incomplete item <a href="#">test link</a>;</li>
+</ul>
+</li>
+</ul>
+<h4 id="反斜杠-escape">反斜杠 Escape</h4>
+<p>*literal asterisks*</p>
+<p>[========]</p>
+<h3 id="科学公式-texkatex">科学公式 TeX(KaTeX)</h3>
+<p>$$E=mc^2$$</p>
+<p>行内的公式$$E=mc^2$$行内的公式，行内的$$E=mc^2$$公式。</p>
+<p>$$x &gt; y$$</p>
+<p>$$(\sqrt{3x-1}+(1+x)^2)$$</p>
+<p>$$\sin(\alpha)^{\theta}=\sum_{i=0}^{n}(x^i + \cos(f))$$</p>
+<p>多行公式：</p>
+<pre><code class="language-math" data-lang="math">\displaystyle
+\left( \sum\_{k=1}^n a\_k b\_k \right)^2
+\leq
+\left( \sum\_{k=1}^n a\_k^2 \right)
+\left( \sum\_{k=1}^n b\_k^2 \right)
+</code></pre><pre><code class="language-katex" data-lang="katex">\displaystyle
+    \frac{1}{
+        \Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{
+        \frac25 \pi}} = 1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {
+        1+\frac{e^{-6\pi}}
+        {1+\frac{e^{-8\pi}}
+         {1+\cdots} }
+        }
+    }
+</code></pre><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-latex" data-lang="latex">f(x) = <span style="color:#66d9ef">\int</span>_{-<span style="color:#66d9ef">\infty</span>}^<span style="color:#66d9ef">\infty</span>
+    <span style="color:#66d9ef">\hat</span> f(<span style="color:#66d9ef">\xi</span>)<span style="color:#66d9ef">\,</span>e^{2 <span style="color:#66d9ef">\pi</span> i <span style="color:#66d9ef">\xi</span> x}
+    <span style="color:#66d9ef">\,</span>d<span style="color:#66d9ef">\xi</span>
+</code></pre></div><h3 id="分页符-page-break">分页符 Page break</h3>
+<blockquote>
+<p>Print Test: Ctrl + P</p>
+</blockquote>
+<p>[===]</p>
+<h3 id="绘制流程图-flowchart">绘制流程图 Flowchart</h3>
+<pre><code class="language-flow" data-lang="flow">st=&gt;start: 用户登陆
+op=&gt;operation: 登陆操作
+cond=&gt;condition: 登陆成功 Yes or No?
+e=&gt;end: 进入后台
+
+st-&gt;op-&gt;cond
+cond(yes)-&gt;e
+cond(no)-&gt;op
+</code></pre><p>[===]</p>
+<h3 id="绘制序列图-sequence-diagram">绘制序列图 Sequence Diagram</h3>
+<pre><code class="language-seq" data-lang="seq">Andrew-&gt;China: Says Hello
+Note right of China: China thinks\nabout it
+China--&gt;Andrew: How are you?
+Andrew-&gt;&gt;China: I am good thanks!
+</code></pre><hr>
+<p>参考：</p>
+<blockquote>
+<p><a href="https://www.markdownguide.org/extended-syntax/">https://www.markdownguide.org/extended-syntax/</a> Markdown解析器</p>
+</blockquote>
+
+            </div>
+        </div>
+    </div>
+    <div class="column is-3">
+        <div class="card">
+    <div class="card-content">
+        <h1 class="title is-5">Tags</h1>
+        <div class="tags">
+        
+            <span class="tag"><a href="https://jett010.github.io/tags/markdown">markdown</a></span>
+        
+            <span class="tag"><a href="https://jett010.github.io/tags/%E5%8D%9A%E5%AE%A2">博客</a></span>
+        
+        </div>          
+    </div>
+</div><br>
+        <div class="card">
+    <div class="card-content">
+        <h1 class="title is-5">Recent posts</h1>
+        
+            <h1><a href="https://jett010.github.io/post/markdown%E8%AF%AD%E6%B3%95%E7%A4%BA%E4%BE%8B/">Markdown语法示例</a></h1>
+            <time class="has-text-grey-light is-size-7">24 March 2020</time>
+        
+    </div>
+</div>
+    <br>
+                
+
+
+    
+<br>
+        <div class="card">
+    <div class="card-content">
+        <h1 class="title is-5">Archives</h1>
+        
+            <a href="https://jett010.github.io/archives/2020">2020</a> (1)<br>
+        
+    </div>
+</div>
+
+    </div>
+</div>
+
+
+    </div>
+</div>
+
+<footer class="footer has-background-grey-darker has-text-white">
+    <div class="content has-text-centered">
+        <p>
+            <span class="icon is-large"><a href="https://twitter.com/" class="mysocial" rel="me"><i class="fab fa-twitter fa-3x"></i></a></span>&nbsp;&nbsp;
+            <span class="icon is-large"><a href="https://www.youtube.com/" class="mysocial" rel="me"><i class="fab fa-youtube fa-3x"></i></a></span>&nbsp;&nbsp;
+            <span class="icon is-large"><a href="https://github.com/" class="mysocial" rel="me"><i class="fab fa-github fa-3x"></i></a></span>&nbsp;&nbsp;
+            <br><br>
+            Copyright &copy; 董锦涛的博客 2020 - Theme by <a href="https://jeffprod.com" class="mysocial">JeffProd.com</a>
+            - <a class="mysocial" href="https://jett010.github.io/about">About</a>
+        </p>
+    </div>
+</footer>
+
+<script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+</body>
+</html>
